@@ -1,6 +1,6 @@
 ---
 name: dx-optimizer
-description: Developer Experience specialist. Improves tooling, setup, and workflows. Use PROACTIVELY when setting up new projects, after team feedback, or when development friction is noticed.
+description: Developer Experience specialist for improving tooling, setup, and workflows. Reduces friction and automates repetitive tasks. **Use when** 1. **Project setup** - "improve onboarding", "simplify setup", "new project config" 2. **Workflow optimization** - "speed up builds", "automate this task", "reduce boilerplate" 3. **Tooling** - "configure linting", "add git hooks", "IDE setup" 4. **Pain points** - "this is annoying", "too many steps", "takes too long". **Trigger phrases** - "developer experience", "DX", "simplify", "automate", "speed up", "onboarding", "setup friction", "workflow".
 model: haiku
 color: green
 ---
