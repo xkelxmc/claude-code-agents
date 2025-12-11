@@ -1,0 +1,21 @@
+{
+  "name": "xkelxmc-plugin",
+  "version": "1.0.0",
+  "description": "Personal collection of Claude Code agents and commands for code review, documentation, debugging, and development workflows",
+  "author": {
+    "name": "Ilya Zhidkov",
+    "email": "xkelxilya1@gmail.com",
+    "url": "https://github.com/xkelxmc"
+  },
+  "homepage": "https://github.com/xkelxmc/claude-code-agents",
+  "repository": "https://github.com/xkelxmc/claude-code-agents",
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "agents",
+    "code-review",
+    "documentation",
+    "debugging",
+    "developer-tools"
+  ]
+}

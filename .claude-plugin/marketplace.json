@@ -1,0 +1,19 @@
+{
+  "name": "claude-code-agents",
+  "owner": {
+    "name": "Ilya Zhidkov",
+    "url": "https://github.com/xkelxmc"
+  },
+  "metadata": {
+    "description": "Personal Claude Code agents and commands collection",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "xkelxmc-plugin",
+      "source": "./",
+      "description": "12 custom agents + 2 commands for code review, documentation, debugging, and development workflows",
+      "version": "1.0.0"
+    }
+  ]
+}
