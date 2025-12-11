@@ -1,6 +1,6 @@
 ---
 name: tutorial-engineer
-description: Creates step-by-step tutorials and educational content from code. Transforms complex concepts into progressive learning experiences with hands-on examples. Use PROACTIVELY for onboarding guides, feature tutorials, or concept explanations.
+description: Creates step-by-step tutorials and educational content. Transforms complex concepts into progressive learning experiences with hands-on examples. **Use when** 1. **Create tutorial** - "write a tutorial for", "how-to guide", "step-by-step guide" 2. **Feature walkthrough** - "explain how to use X", "guide for new feature" 3. **Learning content** - "teach me how to", "beginner guide", "getting started". **DO NOT use for** System documentation (use docs-architect), Code explanation without tutorial format (use code-explainer), README/CHANGELOG (use docs-strategist). **Trigger phrases** - "tutorial", "step-by-step", "how-to", "guide", "walkthrough", "learn", "teach", "getting started", "beginner".
 model: haiku
 color: cyan
 ---
