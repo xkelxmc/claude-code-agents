@@ -1,6 +1,6 @@
 # Claude Code Agents
 
-Personal collection of Claude Code agents and commands for code review, documentation, debugging, and development workflows.
+Personal collection of Claude Code agents and commands for code review, documentation, debugging, and development workflows. Focused on JavaScript/TypeScript development.
 
 ## Installation
 
@@ -24,17 +24,17 @@ After installation, restart Claude Code to load the new agents and commands.
 
 | Agent | Model | Description |
 |-------|-------|-------------|
-| `api-documenter` | sonnet | OpenAPI specs, Postman collections, SDK documentation |
-| `architect-review` | sonnet | Architecture review, DDD, microservices, clean architecture |
-| `code-explainer` | sonnet | Explain code, concepts, and architecture |
-| `code-reviewer` | sonnet | Security, performance, and code quality review |
-| `debugger` | sonnet | Root cause analysis, bug fixing |
-| `docs-architect` | sonnet | Long-form technical documentation, ebooks |
-| `documentation-expert` | sonnet | Documentation strategy and standards |
-| `dx-optimizer` | haiku | Developer experience improvements |
+| `api-documenter` | sonnet | OpenAPI specs, Postman collections, gRPC, WebSocket, webhooks |
+| `architect-review` | sonnet | Architecture review with risk assessment, DDD, microservices |
+| `code-explainer` | sonnet | Explain code with multiple depth levels, ASCII diagrams |
+| `code-reviewer` | sonnet | Security, performance, robustness, accessibility review |
+| `debugger` | sonnet | JS/TS debugging, React/Node errors, async issues |
+| `docs-architect` | sonnet | Long-form technical documentation, onboarding guides |
+| `docs-strategist` | sonnet | Documentation strategy, README, CHANGELOG, style guides |
+| `dx-optimizer` | haiku | Developer experience improvements, tooling |
 | `svg-diagram-generator` | sonnet | SVG diagrams (flowcharts, architecture, ERD) |
 | `task-tracker` | sonnet | Task progress tracking in markdown files |
-| `test-automator` | haiku | Test automation, TDD, CI/CD integration |
+| `test-automator` | haiku | Jest, Vitest, Playwright, Testing Library |
 | `tutorial-engineer` | haiku | Step-by-step tutorials and guides |
 
 ## Commands
@@ -42,7 +42,7 @@ After installation, restart Claude Code to load the new agents and commands.
 | Command | Description |
 |---------|-------------|
 | `/explain [target]` | Explain code, file, function, or concept |
-| `/review [target]` | Code review with security and performance checklist |
+| `/review [target]` | Code review with security, performance, robustness checklist |
 
 ## Usage Examples
 
@@ -96,7 +96,7 @@ Create `agents/{name}.md`:
 ```yaml
 ---
 name: agent-name
-description: When to use this agent...
+description: One-line description with **Use when** triggers and **DO NOT use for** exclusions
 model: sonnet|haiku|opus
 color: red|green|blue|yellow|purple|cyan|magenta|orange
 ---
