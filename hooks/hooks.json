@@ -1,0 +1,16 @@
+{
+  "description": "Enforce Bun over Node.js/npm/npx",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "${CLAUDE_PLUGIN_ROOT}/scripts/enforce-bun.sh"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -44,6 +44,22 @@ After installation, restart Claude Code to load the new agents and commands.
 | `/explain [target]` | Explain code, file, function, or concept |
 | `/review [target]` | Code review with security, performance, robustness checklist |
 
+## Hooks
+
+### Enforce Bun
+
+This plugin includes a hook that enforces using Bun instead of Node.js/npm/npx. When Claude tries to run `node`, `npm`, or `npx` commands, the hook blocks them and suggests using `bun` or `bunx` instead.
+
+**Setup:** Add these aliases to your `~/.zshrc` or `~/.bashrc`:
+
+```bash
+alias force-node="node"
+alias force-npm="npm"
+alias force-npx="npx"
+```
+
+If Claude really needs to use node/npm/npx (e.g., `npm publish`), it can use `force-node`, `force-npm`, or `force-npx` to bypass the hook.
+
 ## Usage Examples
 
 ### Agents
