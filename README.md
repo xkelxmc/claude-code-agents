@@ -18,7 +18,7 @@ Personal collection of Claude Code agents and commands for code review, document
 
 ### Restart Claude Code
 
-After installation, restart Claude Code to load the new agents and commands.
+After installation, restart Claude Code to load the plugins.
 
 ## Agents
 
@@ -48,7 +48,11 @@ After installation, restart Claude Code to load the new agents and commands.
 
 ### Enforce Bun
 
-This plugin includes a hook that enforces using Bun instead of Node.js/npm/npx. When Claude tries to run `node`, `npm`, or `npx` commands, the hook blocks them and suggests using `bun` or `bunx` instead.
+This plugin includes a hook that enforces using Bun instead of Node.js/npm/npx:
+
+- Blocks `node`, `npm`, `npx` commands and suggests `bun`/`bunx` alternatives
+- Ignores npm/node mentions inside quoted strings (no false positives on `echo "npm install"`)
+- Guides agents to use `force-npm` for package info (`npm view`, `npm search`) instead of curl
 
 **Setup:** Add these aliases to your `~/.zshrc` or `~/.bashrc`:
 
@@ -58,7 +62,7 @@ alias force-npm="npm"
 alias force-npx="npx"
 ```
 
-If Claude really needs to use node/npm/npx (e.g., `npm publish`), it can use `force-node`, `force-npm`, or `force-npx` to bypass the hook.
+When Claude needs npm/node (e.g., `npm view react`, `npm publish`), it uses `force-npm`/`force-node`/`force-npx` to bypass the hook.
 
 ## Usage Examples
 
@@ -107,7 +111,7 @@ After making changes to agents or commands:
 
 ### Adding New Agents
 
-Create `agents/{name}.md`:
+Create `plugins/main/agents/{name}.md`:
 
 ```yaml
 ---
@@ -122,7 +126,7 @@ Agent instructions here...
 
 ### Adding New Commands
 
-Create `commands/{name}.md`:
+Create `plugins/main/commands/{name}.md`:
 
 ```yaml
 ---

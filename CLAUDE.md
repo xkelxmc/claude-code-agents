@@ -7,10 +7,19 @@ Personal collection of Claude Code agents and commands. Focused on JavaScript/Ty
 ```
 claude-code-agents/
 ├── .claude-plugin/
-│   ├── marketplace.json    # Marketplace: claude-code-agents
-│   └── plugin.json         # Plugin: xkelxmc-plugin
-├── agents/                 # 12 custom agents
-├── commands/               # 2 slash commands
+│   └── marketplace.json        # Marketplace config
+├── plugins/
+│   ├── main/                   # xkelxmc-plugin
+│   │   ├── .claude-plugin/
+│   │   │   └── plugin.json
+│   │   ├── agents/             # 12 custom agents
+│   │   ├── commands/           # 2 slash commands
+│   │   ├── hooks/
+│   │   └── scripts/
+│   └── ts-lsp/                 # ts-lsp plugin
+│       └── .claude-plugin/
+│           ├── plugin.json
+│           └── .lsp.json       # TypeScript LSP config
 ├── CHANGELOG.md
 └── CLAUDE.md
 ```
@@ -53,7 +62,7 @@ After making changes to agents or commands:
 
 ## Adding New Agents
 
-1. Create `agents/{name}.md` with frontmatter:
+1. Create `plugins/main/agents/{name}.md` with frontmatter:
    ```yaml
    ---
    name: agent-name
@@ -67,7 +76,7 @@ After making changes to agents or commands:
 
 ## Adding New Commands
 
-1. Create `commands/{name}.md` with frontmatter:
+1. Create `plugins/main/commands/{name}.md` with frontmatter:
    ```yaml
    ---
    description: What this command does

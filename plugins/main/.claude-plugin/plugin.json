@@ -1,6 +1,6 @@
 {
   "name": "xkelxmc-plugin",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Personal collection of Claude Code agents and commands for code review, documentation, debugging, and development workflows",
   "author": {
     "name": "Ilya Zhidkov",
@@ -18,6 +18,5 @@
     "debugging",
     "developer-tools",
     "bun"
-  ],
-  "hooks": "./hooks/hooks.json"
+  ]
 }
